@@ -477,7 +477,7 @@ footer {
     .hero {
         height: 100vh;
         margin-top: 10px; /* Offset for fixed header */
-        background-image: url('images/Full.jpg');
+        background-image: url('images/background.jpg');
         max-width: 100%;
     }
     .hero img {
