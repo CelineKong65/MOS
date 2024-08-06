@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG Melaka Old Street</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    
+</head>
+<body>
+    <header>
+        
+        <a href="#home"> <img src="images/faithview.png" alt="Ambience Residence Logo"></a>
+        
+        <nav id="nav-menu">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#types">TYPES</a>
+            <a href="#nearby">NEARBY</a>
+            <a href="#location">LOCATION</a>
+            <a href="#contact">CONTACT US</a>
+        </nav>
+    
+    </header>
+    
+    <div id="home" class="hero">
+        
+    </div>
+   
+        <div class="text-overlay">
+            <h1>MELAKA OLD STREET</h1>
+            <p>YOUR BEST CHOICE</p>
+            <a href="#about" class="button">Learn More</a>
+        </div>
+   
+    
+    <div id="about" class="about-content">
+        <div class="text-content">
+            <h1>Melaka Old Street</h1>
+            <p>@ Kota Laksamana <br><br>
+                Melaka Old Street is strategically located in the heart of Melaka at Kota Laksamana, offering excellent connectivity to major attractions, business centers, and residential areas. This makes it an ideal spot for businesses and entrepreneurs seeking a prime location with easy access to the bustling commercial activities of Melaka.
+            <br><br>
+            The three-storey shop offices are thoughtfully designed to cater to various business needs. They feature spacious interiors, modern amenities, and ample parking space, providing the perfect layout for retail shops, offices, cafes, and more. This design ensures flexibility and convenience, allowing businesses to thrive in a dynamic environment.
+            <br><br>
+            Embracing a heritage concept design, Melaka Old Street offers a unique historical experience that reflects the rich cultural legacy of the area. The architecture and ambiance blend modern functionality with traditional charm, creating an inviting atmosphere that appeals to both locals and tourists, making it a sought-after destination.
+            <br><br>
+            Surrounded by lush greenery and the tranquil flow of the Melaka River, the area offers a picturesque setting that enhances its lively community atmosphere. This makes Melaka Old Street a popular destination for shopping, dining, and leisure activities. 
+            </p>
+        </div>
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <img src="images/mos3.PNG" alt="mos3">
+            </div>
+            <div class="slides fade">
+                <img src="images/mos2.PNG" alt="mos2">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+    </div>
+
+
+
+    <div id="types" class="content">
+        <div class="text-content2">
+            <h1>Types</h1>
+            <p>The unit design at Melaka Old Street consists of three storey of shop offices (22' x 70'), a unique design that optimizes the commercial space and makes it ideal for business, with each unit built using high quality materials to ensure a professional and inviting environment.
+            
+            <p style="font-weight: bolder;font-size: x-large;">3 Storey Shop Office</p>
+            <p style="font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(21, 102, 167);font-weight: bold;" >22' x 70'</p>
+            <div class="gallery-container">
+                <div class="main-image">
+                    <img id="currentImage" src="images/mos1.PNG" alt="Main Image">
+                </div>
+                <div class="thumbnail-images">
+                    <img src="images/mos1.PNG" alt="Thumbnail 1" onclick="changeImage('images/mos1.png')">
+                    <img src="images/mos3.PNG" alt="Thumbnail 2" onclick="changeImage('images/mos3.png')">
+                    <img src="images/mos2.PNG" alt="Thumbnail 3" onclick="changeImage('images/mos2.png')">
+                </div>
+            </div>
+            <div class="button-container">
+                <button onclick="showModal('specification-a')">Layout</button>
+                <button onclick="showModal('floorplan-a')">Floor Plan</button>
+            </div>
+        
+            <div id="specification-a" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('specification-a')">&times;</span>
+                    <img src="images/layout.png" alt="Layout">
+                </div>
+            </div>
+        
+            <div id="floorplan-a" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('floorplan-a')">&times;</span>
+                    <img src="images/floorplan.png" alt="Floor Plan">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="nearby" class="content2">
+        
+        <div class="text-content2">
+            <h1>Nearby</h1>
+            <div class="box-section">
+                <div class="box-icon" onclick="showDetails('Dataran Pahlawan')">
+                    <img src="images\mall.png" alt="DP Icon">
+                    <p>Dataran Pahlawan</p>
+                </div>
+                <div class="box-icon" onclick="showDetails('Encore Melaka')">
+                    <img src="images\performing.png" alt="Encore Icon">
+                    <p>Encore Melaka</p>
+                </div>
+                <div class="box-icon" onclick="showDetails('Jonker Street')">
+                    <img src="images\food-stand.png" alt="Jonker Icon">
+                    <p>Jonker Street</p>
+                </div>
+            </div>
+            <div class="box-section">
+                <div class="box-icon" onclick="showDetails('The Waves Residence')">
+                    <img src="images\residential.png" alt="Waves Icon">
+                    <p>The Waves</p>
+                </div>
+                <div class="box-icon" onclick="showDetails('Bali Residence')">
+                    <img src="images\bali_icon.png" alt="Bali Icon">
+                    <p>Bali Residence</p>
+                </div>
+                <div class="box-icon" onclick="showDetails('Atlantis Residence')">
+                    <img src="images\atlantis.png" alt="Atlantis Icon">
+                    <p>Atlantis Residence</p>
+                </div>
+            </div>
+                <div id="popup" class="popup">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <h3 id="popup-name" class="popup-title"></h3>
+                    <img id="popup-image" src="" alt="Facility Image">
+                </div>
+        </div>
+    </div>
+    <div id="location" class="content2">
+        <div class="text-content2">
+            <div class="map-container iframe">
+                <div>
+                    <h3>Location</h3>
+                    <p style="font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(0, 0, 0);font-weight: bold;" >Faithview in house marketing sales office</p>
+                    <p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8800868683584!2d102.23171167472671!3d2.199028597781514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f1db4a163035%3A0x31cbbd01db429926!2sM%20Group%20(MG%20Marketing%20and%20Management)!5e0!3m2!1sen!2smy!4v1721987058405!5m2!1sen!2smy"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <footer>
+        <div id="contact" class="footer-content">
+            <div class="footer-section address">
+                <h2>Address</h2>
+                <a href="https://www.google.com/maps/place/M+Group+(MG+Marketing+and+Management)/@2.1990286,102.2342866,15z/data=!4m2!3m1!1s0x0:0x31cbbd01db429926?sa=X&ved=1t:2428&ictx=111" style="color: white;">13, Jalan KLJ 1, Taman Kota Laksamana</a>
+                <p style="color: white;">75200 Melaka</p>
+                <p style="color: white;">Malaysia</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <img src="images/email.png" alt="Email Icon" width="30px" height="30px">
+                    <span> mgroup.management23@gmail.com</span>
+                </div>
+                <div class="contact-info">
+                    <a href="https://www.wasap.my/601110976160/AmbienceKota"> <img src="images/phone.jpg" alt="Phone Icon" width="30px" height="30px"></a>
+                    <span>
+                        <br>
+                        Phone:<br>
+                       <a href="https://www.wasap.my/60102282675" style="color: white;"> +6010-228 2675</a><br>
+                       <a href="https://www.wasap.my/60189878300" style="color: white;">+6018-987 8300<br> 
+                       <a href="https://www.wasap.my/601121750925" style="color: white;">+6011-2175 0925<br> 
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/MgroupMelaka">
+                <img src="images/facebook.png" alt="Facebook Icon">
+            </a>
+            <a href="https://www.instagram.com/m.group__/">
+                <img src="images/ig.png" alt="Insta Icon">
+            </a>
+            <a href="https://www.tiktok.com/@mgroup.official?lang=en">
+                <img src="images/tiktok.png" alt="Tiktok Icon">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+         document.addEventListener("DOMContentLoaded", function() {
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("slides");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex-1].style.display = "block";
+            }
+
+            document.querySelector(".prev").addEventListener("click", function() {
+                plusSlides(-1);
+            });
+
+            document.querySelector(".next").addEventListener("click", function() {
+                plusSlides(1);
+            });
+        });
+
+        function showModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+
+        function changeImage(imageSrc) {
+    document.getElementById('currentImage').src = imageSrc;
+}
+function changeI(imageSrc) {
+    document.getElementById('curImage').src = imageSrc;
+}
+function showDetails(facilities) {
+        var popup = document.getElementById('popup');
+        var popupName = document.getElementById('popup-name');
+        var popupImage = document.getElementById('popup-image');
+
+        popup.style.display = 'block'; // Show the pop-up box
+
+        // Set the title based on the clicked facility
+        popupName.textContent = facilities;
+
+        // Set the image source based on the clicked facility
+        switch (facilities) {
+            case 'Dataran Pahlawan':
+                popupImage.src = 'images/dp.jpg';
+                break;
+            case 'Encore Melaka':
+                popupImage.src = 'images/encore.jpg';
+                break;
+            case 'Jonker Street':
+                popupImage.src = 'images/jonker.jpg';
+                break;
+            case 'The Waves Residence':
+                popupImage.src = 'images/thewaves.png';
+                break;
+            case 'Bali Residence':
+                popupImage.src = 'images/bali.png';
+                break;
+            case 'Atlantis Residence':
+                popupImage.src = 'images/atlantis.jpg';
+                break;
+            default:
+                popupImage.src = ''; // No image available
+        }
+    }
+
+    function closePopup() {
+        var popup = document.getElementById('popup');
+        popup.style.display = 'none'; // Hide the pop-up box
+    }
+   
+    </script>
+</body>
+</html>
