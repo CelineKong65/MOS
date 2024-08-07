@@ -22,7 +22,6 @@ p {
     width: 1000px;
     height: 500px;
     max-width: 100%;
-    
     border: none; /* Removes iframe border */
     box-sizing: border-box;
 }
