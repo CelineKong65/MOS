@@ -758,7 +758,9 @@ a{
         height: 300px; /* Adjust height for smaller screens if necessary */
     }
 
-    
+    .col-md-3{
+        height: 350px;
+    }
     
     #footer{
         padding-left: 25px;
@@ -777,16 +779,17 @@ a{
     }
     .useful-link{
         margin-bottom: 20px;
-        height: 47vh;
+        height: 53vh;
         
     }
     .social-links{
-        height:42vh;
+        margin-top: 25px;
+        height:50vh;
        
     }
     .address{
-        margin-top: 20px;
-        height:36vh;
+        margin-top: 10px;
+        height:45vh;
         width:auto;
-}
+    }
 }
