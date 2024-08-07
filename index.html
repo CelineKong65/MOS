@@ -14,19 +14,30 @@
 </head>
 <body>
     <header>
-        
         <a href="#home"> <img src="images/faithview.png" alt="Ambience Residence Logo"></a>
-        
-        <nav id="nav-menu">
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#types">TYPES</a>
-            <a href="#nearby">NEARBY</a>
-            <a href="#location">LOCATION</a>
-            <a href="#contact">CONTACT US</a>
-        </nav>
-    
+        <div class="navigation">
+            <button class="hamburger" onclick="show()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
+            <nav id="nav-menu">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#types">TYPES</a>
+                <a href="#nearby">NEARBY</a>
+                <a href="#location">LOCATION</a>
+                <a href="#contact">CONTACT US</a>
+            </nav>
+        </div>
     </header>
+    <script>
+        function show() {
+            document.querySelector('.hamburger').classList.toggle('open');
+            document.querySelector('.navigation').classList.toggle('active');
+        }
+    </script>
+    
     
     <div id="home" class="hero">
         

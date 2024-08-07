@@ -43,14 +43,6 @@ header img {
 }
 
 
-nav {
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 80px;
-}
-
-
 .logo {
     font-size: 1.5em;
 }
@@ -62,13 +54,6 @@ nav {
     font-size: 1.8em;
     cursor: pointer;
 }
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
 
 
 .hero {
@@ -85,8 +70,6 @@ nav a {
     object-fit: cover;
 }
 
-
-  
 
 .text-overlay {
     position: absolute;
@@ -450,24 +433,116 @@ footer {
     margin-right: 10px;
 }
 
+
+a,button{
+    cursor: pointer;
+}
+
+nav{
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    width: 200px;
+}
+
+.navigation {
+    position: fixed;
+    right: -350px; /* Ensure it starts off-screen */
+    top: 0;
+    width: 250px; /* Adjust the width to fit your menu */
+    height: 100%;
+    background-color: black;
+    color: white;
+    transition: right 0.3s ease; /* Smooth transition */
+    overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+.navigation a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navigation a:hover {
+    background-color: #333; /* Add a hover effect */
+}
+
+.navigation.active {
+    right: 0; /* Move the menu into view */
+}
+
+
+.hamburger, .bar{
+    position: fixed;
+}
+
+.hamburger{
+    display: block;
+    top: 5%;
+    left: 95%;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    border: 0;
+    background: 0 0;
+}
+
+.bar{
+    top: 3px;
+    background: #000;
+    width: 100%;
+    height: 4px;
+    transition: all .3s ease-in;
+}
+
+#bar2{
+    top: 11px;
+}
+
+#bar3{
+    top: 19px;
+}
+
+.navigation.active{
+    right: 0;
+}
+
+.hamburger.open #bar1{
+    background-color: #fff;
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.open #bar2{
+    background-color: transparent;
+}
+
+.hamburger.open #bar3{
+    background-color: #fff;
+    transform: rotate(-45deg) translate(6px, -5px);
+}
+
+
 @media (max-width: 768px) {
     header {
         padding: 10px 20px;
     }
-    nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
+
+    .navigation {
+        width: 200px; /* Adjust the width to fit your menu */
+        height: 100%;
+    }
+
+    
+    nav{
         position: absolute;
-        top: 60px;
-        left: 0;
-        background: #333;
+        top: 100px;
+        right: 25px;
+        width: 150px;
     }
     
-    nav a {
-        padding: 10px;
-        border-top: 1px solid #010101;
-    }
+
     
     .menu-icon {
         display: block;
