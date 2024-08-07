@@ -4,50 +4,64 @@
     <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MG Melaka Old Street</title>
+     <title>Melaka Old Street</title>
+    <link rel="icon" href="images/faithview.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    
-    
+    <link rel="stylesheet" type="text/css"  href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="nivo-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <header>
-        <a href="#home"> <img src="images/faithview.png" alt="Ambience Residence Logo"></a>
-        <div class="navigation">
-            <button class="hamburger" onclick="show()">
-                <div id="bar1" class="bar"></div>
-                <div id="bar2" class="bar"></div>
-                <div id="bar3" class="bar"></div>
-            </button>
-            <nav id="nav-menu">
-                <a href="#home">HOME</a>
-                <a href="#about">ABOUT</a>
-                <a href="#types">TYPES</a>
-                <a href="#nearby">NEARBY</a>
-                <a href="#location">LOCATION</a>
-                <a href="#contact">CONTACT US</a>
-            </nav>
-        </div>
-    </header>
-    <script>
-        function show() {
-            document.querySelector('.hamburger').classList.toggle('open');
-            document.querySelector('.navigation').classList.toggle('active');
-        }
-    </script>
-    
-    
-    <div id="home" class="hero">
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation
+        ==========================================-->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
         
-    </div>
-   
+        <div class="navbar-header">
+          
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          
+          
+          <a class="navbar-brand page-scroll" href="#page-top"><img src="images/FaithLogo.png" width="100%" height="300%" style="margin-top: -10%;" ></a>
+          
+          
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home" class="page-scroll">HOME</a></li>
+            <li><a href="#about" class="page-scroll">ABOUT</a></li>
+            <li><a href="#types" class="page-scroll">TYPES</a></li>
+            <li><a href="#nearby" class="page-scroll">NEARBY</a></li>
+            <li><a href="#location" class="page-scroll">LOCATION</a></li>
+            <li><a href="#footer" class="page-scroll">CONTACT US</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse --> 
+      </div>
+    </nav>
+    <!-- Header -->
+    
+    
+    
+
+    <div id="home" class="hero">
         <div class="text-overlay">
             <h1>MELAKA OLD STREET</h1>
             <p>YOUR BEST CHOICE</p>
             <a href="#about" class="button">Learn More</a>
         </div>
+    </div>
+   
+        
    
     
     <div id="about" class="about-content">
@@ -80,11 +94,11 @@
 
     <div id="types" class="content">
         <div class="text-content2">
-            <h1>Types</h1>
+            <h1>Type</h1>
             <p>The unit design at Melaka Old Street consists of three storey of shop offices (22' x 70'), a unique design that optimizes the commercial space and makes it ideal for business, with each unit built using high quality materials to ensure a professional and inviting environment.
             
             <p style="font-weight: bolder;font-size: x-large;">3 Storey Shop Office</p>
-            <p style="font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(21, 102, 167);font-weight: bold;" >22' x 70'</p>
+            <p style="font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(21, 102, 167);font-weight: bold;" >Starting Price: RM 1,980,000</p>
             <div class="gallery-container">
                 <div class="main-image">
                     <img id="currentImage" src="images/mos1.PNG" alt="Main Image">
@@ -106,7 +120,7 @@
             <div id="specification-a" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('specification-a')">&times;</span>
-                    <img src="images/layout.png" alt="Layout">
+                    <img src="images/layout.png" alt="Specification">
                 </div>
             </div>
         
@@ -154,7 +168,7 @@
                 <div id="popup" class="popup">
                     <span class="close" onclick="closePopup()">&times;</span>
                     <h3 id="popup-name" class="popup-title"></h3>
-                    <img id="popup-image" src="" alt="Facility Image">
+                    <img id="popup-image" src="" alt="Nearby Image">
                 </div>
         </div>
     </div>
@@ -162,8 +176,7 @@
         <div class="text-content2">
             <div class="map-container iframe">
                 <div>
-                    <h3>Location</h3>
-                    <p style="font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(0, 0, 0);font-weight: bold;" >Faithview in house marketing sales office</p>
+                    <h1>Location</h1>
                     <p>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8800868683584!2d102.23171167472671!3d2.199028597781514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f1db4a163035%3A0x31cbbd01db429926!2sM%20Group%20(MG%20Marketing%20and%20Management)!5e0!3m2!1sen!2smy!4v1721987058405!5m2!1sen!2smy"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </p>
@@ -173,46 +186,83 @@
     </div>
 
   
-    <footer>
-        <div id="contact" class="footer-content">
-            <div class="footer-section address">
-                <h2>Address</h2>
-                <a href="https://www.google.com/maps/place/M+Group+(MG+Marketing+and+Management)/@2.1990286,102.2342866,15z/data=!4m2!3m1!1s0x0:0x31cbbd01db429926?sa=X&ved=1t:2428&ictx=111" style="color: white;">13, Jalan KLJ 1, Taman Kota Laksamana</a>
-                <p style="color: white;">75200 Melaka</p>
-                <p style="color: white;">Malaysia</p>
-            </div>
-            <div class="footer-section contact">
-                <h2>Contact</h2>
-                <div class="contact-info">
-                    <img src="images/email.png" alt="Email Icon" width="30px" height="30px">
-                    <span> mgroup.management23@gmail.com</span>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="index.html"><img src="images/FaithLogo.png" alt="" class="img-fluid logo-footer"></a>
+                  <div class="footer-about">
+                      <p>At Faithview Group, we provide high quality, well balanced and progressive working environment 
+                        with ample amenities and high level of sustainability. Our key strengths are our wide experience 
+                        and flexibility; we possess the rare expertise in a wide range of commercial, residential and mixed 
+                        use property solutions in carrying out extensive and successful development portfolio.</p>
+                  </div>
+
                 </div>
-                <div class="contact-info">
-                    <a href="https://www.wasap.my/60102282675/MelakaOldStreet"> <img src="images/phone.jpg" alt="Phone Icon" width="30px" height="30px"></a>
-                    <span>
-                        <br>
-                        Phone:<br>
-                       <a href="https://www.wasap.my/60102282675" style="color: white;"> +6010-228 2675</a><br>
-                       <a href="https://www.wasap.my/60189878300" style="color: white;">+6018-987 8300<br> 
-                       <a href="https://www.wasap.my/601121750925" style="color: white;">+6011-2175 0925<br> 
-                    </span>
+                <div class="col-md-3">
+                    <div class="useful-link">
+                        <h2>Menu</h2>
+                        <img src="./assets/images/about/home_line.png" alt="" class="img-fluid">
+                        <div class="use-links">
+                            <li><i class="fa fa-home"></i><a href="#home" class="page-scroll">Home</a></li>
+                            <li><i class="fa fa-info-circle"></i><a href="#about" class="page-scroll">About Us</a></li>
+                            <li><i class="fa fa-file"></i><a href="#types" class="page-scroll">Types</a></li>
+                            <li><i class='fas fa-shield-alt'></i><a href="#facilities" class="page-scroll">Facilities</a></li>
+                            <li><i class="fa fa-map-marker"></i><a href="#location" class="page-scroll"> Location</a></li>
+                            <li><i class="fa fa-phone"></i><a href="#footer" class="page-scroll">Contact Us</a></li>
+                        </div>
+                    </div>
+                   
+                    
                 </div>
+                <div class="col-md-3">
+                    <div class="social-links">
+                        <h2>Follow Us</h2>
+                        <img src="./assets/images/about/home_line.png" alt="">
+                        <div class="social-icons">
+                            <li><a href="https://www.facebook.com/MgroupMelaka"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                            <li><a href="https://www.instagram.com/m.group__/"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="https://www.tiktok.com/@mgroup.official?lang=en"><i class='fab fa-tiktok'>T</i>&nbsp;&nbsp;Tiktok</a></li>
+                            <li><a href="https://s.lemon8-app.com/al/ZkkUpxFrQR"><i class="fa fa-lemon-o"></i>&nbsp;Lemon8</a></li>
+                            
+                        </div>
+                    </div>
+                
+
+                </div>
+                <div class="col-md-3">
+                    <div class="address">
+                        <h2>Address</h2>
+                        <img src="./assets/images/about/home_line.png" alt="" class="img-fluid">
+                        <div class="address-links">
+                            <li class="address1"><a href="https://www.google.com/maps/place/M+Group+(MG+Marketing+and+Management)/@2.1990286,102.2317117,17z/data=!3m1!4b1!4m6!3m5!1s0x31d1f1db4a163035:0x31cbbd01db429926!8m2!3d2.1990286!4d102.2342866!16s%2Fg%2F11s5zbvhzj!5m1!1e1?entry=ttu"><i class="fa fa-map-marker"></i>13, Jalan KLJ 1, Taman Kota Laksamana,75200 Melaka,Malaysia</a> </li>
+                               <li><a href="mailto: mgroup.management23@gmail.com"><i class="fa fa-envelope"></i> mgroup.management23@gmail.com</a></li>
+                               <li><a href="https://www.wasap.my/60189878300/MelakaOldStreet"><i class="fa fa-phone"></i> +6018-987 8300</a>
+                               <span><a href="https://www.wasap.my/60189878300/MelakaOldStreet" class="button">Click Me</a></span></li>
+                        </div>
+                    </div>
+                </div>
+              
             </div>
         </div>
-        <div class="footer-icons">
-            <a href="https://www.facebook.com/MgroupMelaka">
-                <img src="images/facebook.png" alt="Facebook Icon">
-            </a>
-            <a href="https://www.instagram.com/m.group__/">
-                <img src="images/ig.png" alt="Insta Icon">
-            </a>
-            <a href="https://www.tiktok.com/@mgroup.official?lang=en">
-                <img src="images/tiktok.png" alt="Tiktok Icon">
-            </a>
-        </div>
+
     </footer>
+    <!-- footer section end -->
+    <!-- footer copy right section start -->
+    <section id="copy-right">
+        <div class="copy-right-sec"><i class="fa fa-copyright"></i> 
+            Melaka Old Street Powerd By <a href="https://www.facebook.com/MgroupMelaka">MGroup</a> 
+
+
+        </div>
+
+    </section>
 
     <script>
+        function toggleCollapse() {
+      var content = document.getElementById("collapsibleContent");
+      content.classList.toggle("expanded");
+    }
          document.addEventListener("DOMContentLoaded", function() {
             let slideIndex = 1;
             showSlides(slideIndex);
@@ -290,11 +340,21 @@ function showDetails(facilities) {
         }
     }
 
+    
+
+  
     function closePopup() {
         var popup = document.getElementById('popup');
         popup.style.display = 'none'; // Hide the pop-up box
     }
    
     </script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+    <script type="text/javascript" src="js/bootstrap.js"></script> 
+    <script type="text/javascript" src="js/SmoothScroll.js"></script> 
+    <script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+    <script type="text/javascript" src="js/contact_me.js"></script> 
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
