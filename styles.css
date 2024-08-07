@@ -541,6 +541,17 @@ nav{
         right: 25px;
         width: 150px;
     }
+
+    .hamburger{
+        display: block;
+        top: 5%;
+        left: 95%;
+        width: 30px;
+        height: 30px;
+        transform: translateY(-50%) translateX(-30px);
+        border: 0;
+        background: 0 0;
+    }
     
 
     
