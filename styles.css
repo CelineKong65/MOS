@@ -774,18 +774,18 @@ a{
         margin-right: 0px;
     }
     .useful-link{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         height: 53vh;
         
     }
     .social-links{
-        margin-top: 25px;
+        margin-top: 30px;
         height:50vh;
        
     }
     .address{
-        margin-top: 10px;
-        height:45vh;
+        margin-top: 20px;
+        height:50vh;
         width:auto;
     }
 }
