@@ -758,10 +758,6 @@ a{
         height: 300px; /* Adjust height for smaller screens if necessary */
     }
 
-    .col-md-3{
-        height: 350px;
-    }
-    
     #footer{
         padding-left: 25px;
     }
