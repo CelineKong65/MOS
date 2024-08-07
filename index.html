@@ -113,20 +113,20 @@
                 </div>
             </div>
             <div class="button-container">
-                <button onclick="showModal('specification-a')">Layout</button>
-                <button onclick="showModal('floorplan-a')">Floor Plan</button>
+                <button onclick="showModal('layout')">Layout</button>
+                <button onclick="showModal('floorplan')">Floor Plan</button>
             </div>
         
-            <div id="specification-a" class="modal">
+            <div id="layout" class="modal">
                 <div class="modal-content">
-                    <span class="close" onclick="closeModal('specification-a')">&times;</span>
-                    <img src="images/layout.png" alt="Specification">
+                    <span class="close" onclick="closeModal('layout')">&times;</span>
+                    <img src="images/layout.png" alt="Layout">
                 </div>
             </div>
         
-            <div id="floorplan-a" class="modal">
+            <div id="floorplan" class="modal">
                 <div class="modal-content">
-                    <span class="close" onclick="closeModal('floorplan-a')">&times;</span>
+                    <span class="close" onclick="closeModal('floorplan')">&times;</span>
                     <img src="images/floorplan.png" alt="Floor Plan">
                 </div>
             </div>
@@ -305,18 +305,18 @@
 function changeI(imageSrc) {
     document.getElementById('curImage').src = imageSrc;
 }
-function showDetails(facilities) {
+function showDetails(nearby) {
         var popup = document.getElementById('popup');
         var popupName = document.getElementById('popup-name');
         var popupImage = document.getElementById('popup-image');
 
         popup.style.display = 'block'; // Show the pop-up box
 
-        // Set the title based on the clicked facility
-        popupName.textContent = facilities;
+        // Set the title based on the clicked nearby
+        popupName.textContent = nearby;
 
-        // Set the image source based on the clicked facility
-        switch (facilities) {
+        // Set the image source based on the clicked nearby
+        switch (nearby) {
             case 'Dataran Pahlawan':
                 popupImage.src = 'images/dp.jpg';
                 break;
